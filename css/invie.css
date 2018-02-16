@@ -1,0 +1,35 @@
+/* '*' caracter represents all tags selection and the style will be apply to all html */
+/*
+* {
+	border: 1px solid red;
+	margin: 10px;
+} */
+
+.titulo1 {
+	font-size: 70px;
+}
+
+.titulo2 {
+	font-size: 50px;
+}
+
+.slogan {
+	font-size: 24px;
+}
+
+.guitarras {
+	color: #1F313C;
+}
+
+.guitarras > h2 {
+	font-size: 35px;
+}
+
+.portada {
+	background-image: url('../images/background.png');
+	color: white;
+}
+
+.menu {
+	font-size: 24px;
+}

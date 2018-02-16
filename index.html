@@ -4,13 +4,14 @@
 	<meta nsme="viewport" content="width=device-width">
 	<meta charset="UTF-8">
 	<title>invie | las mejores guitarra!!</title>
+	<link rel="stylesheet" href="css/invie.css">
 </head>
 <body>
-	<header id="header"> <!-- header normaly include logo, menu or navbar-->
-		<figure> <!-- logotipo -->
+	<header id="header" class="header"> <!-- header, normaly include logo, menu or navbar-->
+		<figure class="logotipo"> <!-- logotipo, figure is a tag of html that contains a figure or logo-->
 			<img src="images/invie.png" width="186px" height="60px" alt="invie-logo">
 		</figure>
-		<nav><!-- menu -->
+		<nav class="menu"><!-- menu, nav html5 tag is used for navbar menu navigation-->
 			<ul>
 				<li>
 					<a href="#header">Home</a>
@@ -24,26 +25,26 @@
 			</ul>
 		</nav>
 	</header>
-	<section id="portada"> <!-- portada -->
-		<h1>Guitarras inviesibles</h1><!-- titulo -->
-		<h3>Se la estrella de Rock que siempre quisiste ser</h3><!-- resumen -->
-		<button>conoce más</button><!-- boton -->
+	<section id="portada" class="portada"> <!-- portada html5 section tag is used for div one of principals seccions of page-->
+		<h1 class="titulo1">Guitarras inviesibles</h1><!-- titulo -->
+		<h3 class="slogan">Se la estrella de Rock que siempre quisiste ser</h3><!-- slogan -->
+		<button class="button">conoce más</button><!-- boton -->
 	</section>
-	<section id="guitarras"> <!-- guitarras -->
+	<section id="guitarras" class="guitarras"> <!-- guitarras -->
 		<h2>Nuestras guitarras</h2><!-- titulo -->
-		<article><!-- guitarra1 -->
+		<article class="guitarra"><!-- guitarra1, the article html5 tag is an element of a secction which includes a img, head, p... etc-->
 			<!-- if we put a with but not a heigth, it puts auto depends of img size, is a good practice for not square imgs -->
 			<img src="images/invie-acustica.png" alt="Invie Acústica" width="200px">
-			<h3> Invie Acústica</h3>
+			<h3 class="titulo2"> Invie Acústica</h3>
 			<ol>
 				<li>Estilo vintage</li>
 				<li>Madera Pura</li>
 				<li>Incluye estuche invisible de aluminio</li>
 			</ol>
 		</article>
-		<article><!-- guitarra2 -->
+		<article class="guitarra"><!-- guitarra2 -->
 			<img src="images/invie-classic.png" alt="Invie Classic" width="200">
-			<h3> Invie Classic</h3>
+			<h3 class="titulo2"> Invie Classic</h3>
 			<ol>
 				<li>Estilo vintage</li>
 				<li>Liviana</li>
