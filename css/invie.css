@@ -1,20 +1,88 @@
-/* '*' caracter represents all tags selection and the style will be apply to all html */
-/*
+/* '*' caracter represents all tags selection and the style will be apply to all html 
+
 * {
 	border: 1px solid red;
 	margin: 10px;
-} */
+} 
+
+we can add our google fonts by this way:
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Allerta', sans-serif;
+
+*/
+/*
+box-model
+* {
+	border: 2px solid red;
+	margin: 10px 5px 15px 3px;
+	padding: 5px;
+}
+*/
+
+body {
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+}
+
+header {
+	/* father node of menu */
+	position: relative;
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+}
 
 .titulo1 {
 	font-size: 70px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top:70px;
+	margin-bottom: 0;
 }
 
 .titulo2 {
 	font-size: 50px;
+	margin-left: 0px;
+	margin-bottom: 20px;
 }
 
 .slogan {
+	margin-top: 0;
 	font-size: 24px;
+}
+
+.logotipo {
+	display: inline-block;
+}
+
+.menu {
+	font-size: 24px;
+	display: inline-block;
+	/* the absolute position is align refer to the relative node most near  */
+	position: absolute;
+	right: 0px;
+}
+
+.menu li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.portada {
+	background-image: url('../images/background.png');
+	color: white;
+	padding: 20px;
+}
+
+.portada button {
+	padding: 7px;
+	margin-bottom: 70px;
+	border-radius: 5px;
+	border: none;
+	background: #FD324E;
+	color: white;
 }
 
 .guitarras {
@@ -23,13 +91,47 @@
 
 .guitarras > h2 {
 	font-size: 35px;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.portada {
-	background-image: url('../images/background.png');
-	color: white;
+.guitarras ol {
+	padding-left: 0px;
 }
 
-.menu {
-	font-size: 24px;
+.guitarra {
+	/* when we float elements and it put beside other element, the sizes of them get offset,
+	overflow: hidden; ajust the offset 
+	overflow: hidden;
+	*/
+	padding: 10px;
+	border: 1px solid #1F313C;
+	margin-bottom: 10px;
+	/* border-radius create a border rounded into element */
+	border-radius: 8px;
+}
+
+.guitarra-div-a {
+	padding-left: 20px;
+}
+
+.guitarra-div-b {
+	/* the element float beside is an image with width of 350px, so if we want  margin with 20px
+	we must sum 20 + 350 = 370px   */
+	margin-left: 370px;
+}
+
+.right {
+	/* float right property floats a element to right side */
+	float: right;
+	/* when float is assign we can declare other attributes like position 
+	relative, fixed or absolute*/
+	position: relative;
+	top: -127px;
+}
+
+.left {
+	/* float left property floats a element to left side */
+	float: left;
+	position: relative;
+	top: 80px;
 }
