@@ -76,7 +76,7 @@ header {
 	padding: 20px;
 }
 
-.portada button {
+.button {
 	padding: 7px;
 	margin-bottom: 70px;
 	border-radius: 5px;
@@ -134,4 +134,70 @@ header {
 	float: left;
 	position: relative;
 	top: 80px;
+}
+
+.footer {
+	background: #273B47;
+	color: white;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacto {
+	display: flex;
+	/* we asign 300px of with to contacto and wrap by this way
+	the elments will put one on other */
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.contacto a {
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0px;
+}
+
+.contacto img {
+	display: block;
+}
+
+.contacto strong {
+	display: block;
+}
+
+
+.formulario {
+	width: 400px;
+	margin: 50px 10px;
+	display: flex;
+}
+
+.formulario label, .sexo, .intereses {
+	margin-bottom: 10px;
+}
+
+/* the ',' is equal elemnt1 + element2 will have the styles */
+.datos, .comentarios {
+	display: flex;
+	flex-direction: column;
+}
+
+.datos {
+	margin-right: 15px;
+}
+
+.comentarios {
+	align-items: flex-start;
+}
+
+.sexo {
+	margin-top: 10px;
+}
+
+.sexo  label, .intereses  label {
+	font-size: 12px;
 }

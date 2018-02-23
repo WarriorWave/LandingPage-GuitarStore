@@ -3,7 +3,7 @@
 <head>
 	<meta nsme="viewport" content="width=device-width">
 	<meta charset="UTF-8">
-	<title>invie | las mejores guitarra!!</title>
+	<title>invie | las mejores guitarras!!</title>
 	<!-- we can include other type of fonts with this google fonts CDN -->
 	<link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/invie.css">
@@ -64,5 +64,54 @@
 			</div>
 		</article>
 	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="contacto">
+				<img src="images/invie-white.png" alt="invie-white-logo">
+				<!-- with a tag we can use apps links like tel: & maito:, we use span tag without semantic value & inline-block attributes -->
+				<a href="tel:+525560325896"><strong>Teléfono</strong> <span>5560325896</span></a>
+				<a href="mailto:contacto@invie.com"><strong>Contacto</strong> <span>contacto@invie.com</span></a>
+			</div>
+			<form class="formulario">
+				<!-- envolve this module into div for appy flex box -->
+				<div class="datos">
+					<label for="nombre">Nombre</label>
+					<input type="text" id="nombre" required name="nombre">
+					<label for="email">E-mail</label>
+					<input type="email" id="email" required name="email">
+					<!-- we can put radio inputs, is a god practice envolve them into their labels
+				then we click one of both the radio get select, the name must be equal for a same group of radios -->
+					<div class="sexo">
+						<label for="hombre">
+							<input type="radio" id="hombre" name="sexo" value="hombre" checked>Hombre
+						</label>
+						<label for="mujer">
+							<input type="radio" id="mujer" name="sexo" value="mujer">Mujer
+						</label>	
+					</div>
+					<!-- this div contains a checkbox inputs, they are like radios but they allow multiple selections -->
+					<div class="intereses">
+						<label for="cotizacion">
+							<input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked>Cotización
+						</label>
+						<label for="reclamos">
+							<input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+						</label>
+						<label for="comentarios">
+							<input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+						</label>
+						<label for="otros">
+							<input type="checkbox" id="otros" name="intereses" value="otros">Otros
+						</label>
+					</div>
+				</div>
+				<div class="comentarios">
+					<label for="comentarios-text">Comentarios</label>
+					<textarea name="comentarios" id="comentarios-text" cols="25" rows="5"></textarea>
+					<input class="button" type="submit" value="Enviar">
+				</div>
+			</form>	
+		</div>	
+	</footer>	
 </body>
 </html>
